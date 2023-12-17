@@ -1,0 +1,40 @@
+{
+    "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
+    "name": "microbin",
+    "version": "1.0.0",
+    "description": "Binary serialization for arduino",
+    "keywords": [],
+    "homepage": "https://github.com/neko-neko-nyan/microbin-arduino",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/neko-neko-nyan/microbin-arduino.git"
+    },
+    "authors": [
+        {
+            "name": "NekoNekoNyan",
+            "email": "me@neko-dev.ru",
+            "url": "https://neko-dev.ru"
+        }
+    ],
+    "license": "MIT",
+    "frameworks": "*",
+    "platforms": "*",
+    "headers": ["microbin.h"],
+    "examples": [
+        {
+            "name": "Encode buffer 1",
+            "base": "examples/01_encode_buffer_1",
+            "files": ["01_encode_buffer_1.ino"]
+        },
+        {
+            "name": "Encode buffer 2",
+            "base": "examples/02_encode_buffer_2",
+            "files": ["02_encode_buffer_2.ino"]
+        },
+        {
+            "name": "Encode stream",
+            "base": "examples/03_encode_serial",
+            "files": ["03_encode_serial.ino"]
+        }
+    ]
+}
